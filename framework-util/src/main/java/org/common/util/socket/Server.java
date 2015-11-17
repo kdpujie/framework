@@ -8,7 +8,11 @@ import java.util.Random;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-
+/**
+ * socketserver，每隔100ms像客户端 随机发送字母。
+ * <br>Date:2015年10月29日 上午11:41:57
+ * @author pujie
+ */
 public class Server {
 	
 	public static int port = 1234;

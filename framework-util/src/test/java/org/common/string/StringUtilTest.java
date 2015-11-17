@@ -29,8 +29,13 @@ public class StringUtilTest {
 	}
 	@Test
 	public void test(){
-		int a = 90;
-		System.out.println(randomWord());
+		for(int i=0;i<100;i++){
+			for(int j=0;j<10;j++){
+				if(j==1){
+					break;
+				}
+			}
+		}
 	}
 	public static char randomWord(){
 		int[] words = new int[26];
