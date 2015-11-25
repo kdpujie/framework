@@ -1,8 +1,6 @@
 package org.common.util;
 
 
-import java.io.IOException;
-
 import com.alibaba.fastjson.JSON;
 
 
@@ -20,9 +18,8 @@ public class JsonUtil {
 	 * 
 	 * @param obj
 	 * @return
-	 * @throws IOException
 	 */
-	public static String beanToJson(Object obj) throws IOException {
+	public static String beanToJson(Object obj)  {
 		
 		String json =JSON.toJSONString(obj);
 		return json;
@@ -34,9 +31,8 @@ public class JsonUtil {
 	 * @param json
 	 * @param cls
 	 * @return
-	 * @throws Exception
 	 */
-    public static <T> T jsonToBean(String json, Class<T> cls) throws Exception {
+    public static <T> T jsonToBean(String json, Class<T> cls){
 		T vo  = JSON.parseObject(json, cls);
 		return vo;
 	}
