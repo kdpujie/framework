@@ -7,6 +7,8 @@ import javax.annotation.PostConstruct;
 
 
 
+
+import org.common.util.NumberUtil;
 import org.framework.cache.pool.JedisPools;
 
 import redis.clients.jedis.JedisPool;
@@ -39,7 +41,7 @@ public class ReadJedisPools implements JedisPools{
 	}
 	
 	public int hash(){
-		return  (int)(System.currentTimeMillis()%this.nodesSize);
+		return  NumberUtil.random(this.nodesSize);
 	}
     /* (non-Javadoc)
 	 * @see com.vaolan.common.cache.config.JedisPools#getJedisPool()
