@@ -19,6 +19,7 @@ import org.junit.Test;
  * java锁机制测试
  * <br>Date:2015年9月30日 上午11:52:14
  * @author pujie
+ * <result>lock的性能优于其他两个
  */
 public class ThreadLockTest {
 
@@ -32,7 +33,7 @@ public class ThreadLockTest {
 	@After
 	public void tearDown() throws Exception {
 	}
-	
+	@Test
 	public void testLockSpeed()throws Exception{
 		int round = 500000;
 		for(int i=18;i>0;i=i-2){
