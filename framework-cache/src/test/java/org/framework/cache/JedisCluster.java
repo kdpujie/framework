@@ -26,7 +26,7 @@ public class JedisCluster {
 	@Test
 	public void test() {
 //		jc.del("t_c_201511232");
-		Map<String, String> budget = jc.hgetAll("t_c_201511232");
+		Map<String, String> budget = jc.hgetAll("t_c_ 201601072");
 		for(Entry<String, String> entry:budget.entrySet()){
 			System.out.println(entry.getKey()+":"+entry.getValue());
 		}
